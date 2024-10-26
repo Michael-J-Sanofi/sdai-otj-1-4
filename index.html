@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website with Carousel, Navbar, and Footer</title>
+    <title>Website with Banner, Navbar, and Footer</title>
     <style>
         /* Basic reset */
         * {
@@ -12,23 +12,17 @@
             box-sizing: border-box;
         }
 
-        /* Hero section (carousel) styling */
+        /* Hero section (static banner) styling */
         .hero-section {
             position: relative;
             width: 100%;
-            height: 300px;
+            height: 400px;
             overflow: hidden;
         }
 
-        .carousel-images {
-            display: flex;
-            width: 200%; /* Twice the width for two images */
-            transition: transform 1s ease;
-        }
-
-        .carousel-images img {
+        .hero-section img {
             width: 100%;
-            height: 300px;
+            height: 400px;
             object-fit: cover;
         }
 
@@ -106,19 +100,15 @@
 </head>
 <body>
 
-    <!-- Hero Section (Carousel) -->
+    <!-- Hero Section (Static Banner) -->
     <div class="hero-section" id="heroSection">
-        <div class="carousel-images" id="carouselImages">
-            <img src="https://via.placeholder.com/1200x300?text=Image+1" alt="Banner Image 1">
-            <img src="https://via.placeholder.com/1200x300?text=Image+2" alt="Banner Image 2">
-        </div>
+        <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="Woman looking into a food truck at a street food market">
     </div>
 
     <!-- Navbar -->
     <div class="navbar">
         <a href="#about">ABOUT US</a>
-        <a href="#menu">MENU</a>
-        <a href="#favorites">DEVELOPER'S FAVORITES</a>
+        <a href="#favorites">DEV'S FAVORITES</a>
         <a href="#location">LOCATION</a>
         <a href="#hours">HOURS</a>
     </div>
@@ -129,13 +119,8 @@
         <p>Welcome to our website! Here, you can learn more about our story and what we stand for.</p>
     </section>
 
-    <section id="menu">
-        <h2>MENU</h2>
-        <p>Check out our delicious offerings and see what catches your eye on our menu!</p>
-    </section>
-
     <section id="favorites">
-        <h2>DEVELOPER'S FAVORITES</h2>
+        <h2>DEV'S FAVORITES</h2>
         <p>Here are some of our top picks, carefully curated by our developers!</p>
     </section>
 
@@ -159,25 +144,4 @@
 
     <!-- Footer -->
     <div class="footer">
-        <p>Connect with us on social media:</p>
-        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">&#x1F5E8;</a> <!-- Placeholder icon -->
-        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">&#x1F4F7;</a> <!-- Placeholder icon -->
-        <a href="https://www.twitter.com" target="_blank" aria-label="X">&#x1F426;</a> <!-- Placeholder icon -->
-    </div>
-
-    <script>
-        // JavaScript for automatic carousel rotation
-        let currentSlide = 0;
-
-        function changeSlide() {
-            const carousel = document.getElementById("carouselImages");
-            currentSlide = (currentSlide + 1) % 2; // Toggle between slide 0 and 1
-            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-        }
-
-        // Set interval for changing slides every 10 seconds
-        setInterval(changeSlide, 10000);
-    </script>
-
-</body>
-</html>
+        <p>Connect with us on social media:
