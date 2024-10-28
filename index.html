@@ -3,125 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website with Banner, Navbar, and Footer</title>
-    <style>
-        /* Basic reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+    <title>Dev Dish Food Truck & Restaurant</title>
+    <style type="text/css">
+        h1{
+            color: white
         }
-
-        /* Hero section (static banner) styling */
-        .hero-section {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-        }
-
-        .hero-section img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-        }
-
-        /* Navbar styling */
-        .navbar {
-            background-color: #333;
-            padding: 15px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .navbar a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            display: inline-block;
-            transition: background 0.3s;
-        }
-
-        .navbar a:hover {
-            background-color: #555;
-        }
-
-        /* Offset for sections below navbar */
-        section {
-            padding: 60px;
-            margin-top: 80px;
-            background-color: #f4f4f4;
-            border-radius: 5px;
-            scroll-margin-top: 70px; /* Adjusts for navbar height */
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        /* Hours list styling */
-        .hours-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .hours-list li {
-            margin-bottom: 8px;
-        }
-
-        .hours-list span {
-            display: inline-block;
-            width: 100px;
-            font-weight: bold;
-        }
-
-        /* Footer styling */
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .footer a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 1.5em;
-        }
-
-        .footer a:hover {
-            color: #bbb;
-        }
+        a{
+        text-decoration: none;
+      }
+      .navbar{
+        background: grey; font-family: calibri; 
+      }
+      .navdiv{
+        display: flex; align-items: center; justify-content: space-between;
+      }
+      .logo a{
+        font-size: 35px; font-weight: 600; color: white
+      }
+      ol{
+        list-style: none; display: inline-block;
+      }
+      .navbarref{
+        color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+     
     </style>
 </head>
 <body>
 
     <!-- Hero Section (Static Banner) -->
-    <div class="hero-section" id="heroSection">
-        <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="Woman looking into a food truck at a street food market">
-    </div>
+    
 
     <!-- Navbar -->
-    <div class="navbar">
-        <a href="#about">ABOUT US</a>
-        <a href="#favorites">DEV'S FAVORITES</a>
-        <a href="#location">LOCATION</a>
-        <a href="#hours">HOURS</a>
-    </div>
-
-    <!-- Page Sections -->
+    <nav class="navbar">
+        <img class foodtruck src="image.png" alt="" width="100%">
+        <div class="navdiv">
+            <div>
+                <h1>Dev Dish Food Truck & Restaurant</h1>
+                </div>
+            <ol>
+                <li>
+                    <a class="navbarref" href="#about">About US</a>
+                </li>
+                <li>
+                    <a class="navbarref" href="#favorites">Dev's Favorites</a>
+                </li>
+                <li>
+                    <a class="navbarref" href="#location">Location</a>
+                </li>
+                <li>
+                    <a class="navbarref" href="#hours">Hours</a>
+                </li>
+  
+            </ol>
+  
+  
+  
+        </div>
+  
+      </nav>
     <section id="about">
         <h2>ABOUT US</h2>
-        <p>Welcome to our website! Here, you can learn more about our story and what we stand for.</p>
+        <p>What's so great about combining the worlds of coding and cuisine? Dev Dish was founded by two passionate developers who turned their love for software into a culinary adventure. After years of coding by day and cooking by night, they decided to merge their two passions and create something extraordinary.</p>
+        <p>Dev Dish brings a unique twist to the food truck scene, offering a menu full of creative, tech-inspired dishes. Whether you're a tech enthusiast or a food lover, our offerings are designed to satisfy both your appetite and your curiosity.</p>
+        <p>Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
+
     </section>
 
     <section id="favorites">
-        <h2>DEV'S FAVORITES</h2>
-        <p>Here are some of our top picks, carefully curated by our developers!</p>
+        <h2>The Dev Dish Quarterly Menu</h2>
+        <h2>Wraps</h2>
+        <ol><li><b>Function Fries</b>
+            <ul>Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</ul><br>
+            
+            </li>
+            <li><b>Loop Wrap</b>
+            <ul>Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</ul><br>
+            
+            </li>
+            <li><b>Stack Overflow</b>
+            <ul>Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</ul><br>
+            
+            </li>
+            <li><b>Recursive Roll</b>
+            <ul>Smoked salmon, cream cheese, cucumber, dill, and baby spinach</ul><br>
+            
+            </li>
+            <li><b>Binary Bites</b>
+            <ul>Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</ul><br>
+            
+            </li>
+            <li><b>Git Wrap</b>
+            <ul>Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</ul><br>
+            
+            </li>
+            <li><b>Note:</b>
+            <ul><i>All wraps, except Stack Overflow are served on your choice of flour or corn tortilla.</i></ul><br>
+            
+            </li>
+            
+        
+        </ol>
+        
+        <br>
+
+    <br>
+    <br>
+
+    <h2>Sides</h2>
+    <ol><li><b>Bug-Free Fries</b>
+            <ul>Just a side of fries</ul><br>
+            
+            </li>
+            <li><b>Three-Layer Cheese Fries</b>
+            <ul>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</ul><br>
+            
+            </li>
+            <li><b>Golden Ratio Fries</b>
+            <ul>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</ul><br>
+            
+            </li>
+            <li><b>Compile Chips</b>
+            <ul>Tortilla chips and salsa verde</ul><br>
+            
+            </li>
+
+    <br>
+    <br>
+    <h2>Developer's Favorites</h2>
+    <p>
+        Enjoy Dev Dish fan favorite menu items at local events or book us for a visit to your neighborhood or for your special occasion.
+    </p>
+    <br>
+    <br>
     </section>
 
     <section id="location">
@@ -144,4 +157,11 @@
 
     <!-- Footer -->
     <div class="footer">
-        <p>Connect with us on social media:
+        <div class="footer">
+        <p>Connect with us on social media:</p>
+        
+        <a href="https://www.facebook.com"><img src="facebook.png" alt=""></a> 
+        <a href="https://www.instagram.com"><img src="" alt="instagram.jpg"></a> 
+        <a href="https://www.twitter.com"><img src="" alt="x.png"></a> 
+    </div>
+
