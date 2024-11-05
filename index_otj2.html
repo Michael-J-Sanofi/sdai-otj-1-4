@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Dish Food Truck & Restaurant</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        /* Headings and Titles */
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', serif;
+            color: #333;
+            margin: 20px 0;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.75em;
+            width: 100%;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            font-size: 1.25em;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: grey;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Menu Styling */
+        .menu-section {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .menu-item {
+            margin: 10px 0;
+        }
+        .menu-item h4 {
+            margin-bottom: 5px;
+            color: #444;
+        }
+        .description {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Centered Location and Hours Section */
+        #location, #hours {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Hours List */
+        .hours-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block; /* Center the list */
+            text-align: left; /* Align text to the left within the centered block */
+        }
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            width: 200px;
+            margin: 0 auto;
+        }
+        .hours-list .day {
+            font-weight: bold;
+            width: 100px;
+            text-align: left;
+        }
+        .hours-list .time {
+            text-align: left;
+        }
+
+        /* Footer Styling */
+        .footer {
+            margin-top: 20px;
+        }
+        .footer p {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .linkimage {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navdiv">
+            <div>
+                <h1>Dev Dish Food Truck & Restaurant</h1>
+            </div>
+            <ol>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#favorites">Dev's Favorites</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#hours">Hours</a></li>
+            </ol>
+        </div>
+    </nav>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Dev Dish was founded by developers who merged their passions for coding and cuisine...</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="favorites">
+        <h2>The Dev Dish Quarterly Menu</h2>
+        
+        <!-- Wraps Category -->
+        <div class="menu-section">
+            <h3>Wraps</h3>
+            <div class="menu-item">
+                <h4>Function Fries</h4>
+                <p class="description">Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</p>
+            </div>
+            <div class="menu-item">
+                <h4>Loop Wrap</h4>
+                <p class="description">Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</p>
+            </div>
+        </div>
+
+        <!-- Sides Category -->
+        <div class="menu-section">
+            <h3>Sides</h3>
+            <div class="menu-item">
+                <h4>Bug-Free Fries</h4>
+                <p class="description">Just a side of fries</p>
+            </div>
+            <div class="menu-item">
+                <h4>Three-Layer Cheese Fries</h4>
+                <p class="description">Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location">
+        <h2>Location</h2>
+        <p>511 Tristin Isle Park, Hudsonton, Michigan</p>
+    </section>
+
+    <!-- Hours Section -->
+    <section id="hours">
+        <h2>Hours</h2>
+        <ul class="hours-list">
+            <li><span class="day">Monday:</span><span class="time">10am - 7pm</span></li>
+            <li><span class="day">Tuesday:</span><span class="time">10am - 7pm</span></li>
+            <li><span class="day">Wednesday:</span><span class="time">10am - 7pm</span></li>
+            <li><span class="day">Thursday:</span><span class="time">10am - 10pm</span></li>
+            <li><span class="day">Friday:</span><span class="time">10am - 9pm</span></li>
+            <li><span class="day">Saturday:</span><span class="time">12pm - 11pm</span></li>
+            <li><span class="day">Sunday:</span><span class="time">12pm - 11pm</span></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Connect with us on social media:</p>
+        <a href="https://www.facebook.com"><img class="linkimage" src="facebook.png" alt="Facebook"></a> 
+        <a href="https://www.instagram.com"><img class="linkimage" src="instagram.jpg" alt="Instagram"></a> 
+        <a href="https://x.com/"><img class="linkimage" src="x.png" alt="X"></a> 
+    </div>
+</body>
+</html>
