@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Dish Food Truck & Restaurant</title>
     <style>
-        h1{
-            color: black
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
+
+        /* Headings and Titles */
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', serif;
+            color: #333;
+            margin: 20px 0;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.75em;
+            width: 100%;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            font-size: 1.25em;
+        }
+        
+       
         a{
         text-decoration: none;
       }
@@ -103,89 +130,74 @@
 
     <section id="favorites">
         <h2>The Dev Dish Quarterly Menu</h2>
-        <h2>Wraps</h2>
-        <ol>
-            <li>
-              <b>Function Fries</b>
-              <p class="description">Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</p>
-              <br>
-            </li>
-          
-            <li>
-              <b>Loop Wrap</b>
-              <p class="description">Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</p>
-              <br>
-            </li>
-          
-            <li>
-              <b>Stack Overflow</b>
-              <p class="description">Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</p>
-              <br>   
-            </li>
-          
-            <li>
-              <b>Recursive Roll</b>
-              <p class="description">Smoked salmon, cream cheese, cucumber, dill, and baby spinach</p>
-              <br>
-            </li>
-          
-            <li>
-              <b>Binary Bites</b>
-              <p class="description">Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</p>
-              <br>
-            </li>
-          
-            <li>
-              <b>Git Wrap</b>
-              <p class="description">Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</p>
-              <br>
-            </li>
-          
-            <li>
-              <b>Note:</b>
-              <p class="description"><i>All wraps, except Stack Overflow are served on your choice of flour or corn tortilla.</i></p>
-              <br>
-            </li>
-        </ol>
+        <!-- Wraps Category -->
+        <div class="menu-section">
+            <h3>Wraps</h3>
+            <div class="menu-item">
+                <h4>Function Fries</h4>
+                <p class="description">Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</p>
+            </div>
+            <div class="menu-item">
+                <h4>Loop Wrap</h4>
+                <p class="description">Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</p>
+            </div>
+            <div class="menu-item">
+                <h4>Stack Overflow</h4>
+                <p class="description">Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</p>
+            </div>
+            <div class="menu-item">
+                <h4>Recursive Roll</h4>
+                <p class="description">Smoked salmon, cream cheese, cucumber, dill, and baby spinach</p>
+            </div>
+            <div class="menu-item">
+                <h4>Binary Bites</h4>
+                <p class="description">Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</p>
+            </div>
+            <div class="menu-item">
+                <h4>Git Wrap</h4>
+                <p class="description">Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</p>
+            </div>
+            <div class="menu-item">
+                <h4>Note:</h4>
+                <p class="description"><i>All wraps, except Stack Overflow, are served on your choice of flour or corn tortilla.</i></p>
+            </div>
+        </div>
+        
+        <!-- Sides Category -->
+        <div class="menu-section">
+            <h3>Sides</h3>
+            <div class="menu-item">
+                <h4>Bug-Free Fries</h4>
+                <p class="description">Just a side of fries</p>
+            </div>
+            <div class="menu-item">
+                <h4>Three-Layer Cheese Fries</h4>
+                <p class="description">Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
+            </div>
+            <div class="menu-item">
+                <h4>Golden Ratio Fries</h4>
+                <p class="description">Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
+            </div>
+            <div class="menu-item">
+                <h4>Compile Chips</h4>
+                <p class="description">Tortilla chips and salsa verde</p>
+            </div>
+        </div> 
 
-        <h2>Sides</h2>
-        <ol>
-          <li>
-            <b>Bug-Free Fries</b>
-            <p class="description">Just a side of fries</p>
-            <br>
-          </li>
-          
-          <li>
-            <b>Three-Layer Cheese Fries</b>
-            <p class="description">Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
-            <br>
-          </li>
-          
-          <li>
-            <b>Golden Ratio Fries</b>
-            <p class="description">Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
-            <br>
-          </li>
-          
-          <li>
-            <b>Compile Chips</b>
-            <p class="description">Tortilla chips and salsa verde</p>
-            <br>
-          </li>
-        </ol>
-
+        <!-- Developer's Favorites Category -->
         <h2>Developer's Favorites</h2>
         <p>Enjoy Dev Dish fan favorite menu items at local events
           or book us for a visit to your neighborhood or for your
           special occasion.</p>
     </section>
 
+    <!-- Location Section -->
     <section id="location">
         <h2>Location</h2>
         <p>511 Tristin Isle Park, Hudsonton, Michigan</p>
     </section>
 
+    <!-- Hours Section -->
     <section id="hours">
         <h2>Hours</h2>
         <ol class="hours-list">
